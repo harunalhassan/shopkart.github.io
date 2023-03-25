@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.calculator {
+	margin: auto;
+	width: 240px;
+}
+
+.display {
+	background-color: #eee;
+	padding: 10px;
+	text-align: right;
+}
+
+.display input {
+	border: none;
+	font-size: 20px;
+	height: 40px;
+	width: 100%;
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	height: 40px;
+	width: 50%;
+}
+
+.number {
+	color: #333;
+}
+
+.operator {
+	color: #fff;
+	background-color: #333;
+}
+
+button:hover {
+	background-color: #ccc;
+}
