@@ -1,25 +1,10 @@
-let result = document.getElementById("result");
+/* Product filtering */
+const categories = document.querySelectorAll('.category');
+const products = document.querySelectorAll('.product');
 
-function addToResult(value) {
-  result.value += value;
-}
+categories.forEach(category => {
+  category.addEventListener('click', () => {
+    const categoryValue = category.getAttribute('data-category');
 
-function clearResult() {
-  result.value = "";
-}
-
-function backspace() {
-  result.value = result.value.slice(0, -1);
-}
-
-function operate(operator) {
-  result.value += operator;
-}
-
-function calculate() {
-  try {
-    result.value = eval(result.value);
-  } catch (error) {
-    result.value = "Error";
-  }
-}
+    products.forEach(product => {
+      if (product.getAttribute('data-category') ===
