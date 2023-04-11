@@ -1,1 +1,1 @@
-# simplecalci.github.io
+# shopkart.github.io
